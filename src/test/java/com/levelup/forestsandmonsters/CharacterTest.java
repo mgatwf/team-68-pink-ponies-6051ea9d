@@ -1,7 +1,6 @@
 package com.levelup.forestsandmonsters;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import com.levelup.forestsandmonsters.Character;
 import org.junit.Test;
 
 public class CharacterTest {
