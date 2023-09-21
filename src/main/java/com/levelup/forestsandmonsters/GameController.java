@@ -5,7 +5,8 @@ import java.awt.Point;
 public class GameController {
 
     static final String DEFAULT_CHARACTER_NAME = "Character";
-
+    GameMap map;
+    Character character;
     public class GameStatus {
         // TODO: Add other status data
         public String characterName = DEFAULT_CHARACTER_NAME;
@@ -36,9 +37,15 @@ public class GameController {
     }
 
     public void startGame() {
-        // TODO: Implement startGame - Should probably create tiles and put the character
-        // on them?
-        // TODO: Should also update the game results?
+        map = new GameMap();
+        if(character == null)
+        {
+            this.character = new Character();
+        }
+        character.enterMap(map);
+        this.status.characterName = this.character.name;
+        this.status.currentPosition = this.character.getPosition().coordinates;
+        this.status.moveCount = this.character.getMoveCount();
     }
 
     public GameStatus getStatus() {
