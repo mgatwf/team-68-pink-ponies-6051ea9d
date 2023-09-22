@@ -12,5 +12,5 @@ Scenario Outline:: Set character name
     Examples:
         | characterNameInput | characterNameOutput |
         | "Bob"          | "Bob"           |
-        | ""              | "Erin"         |
+        | ""              | "PinkPonies"         |
 

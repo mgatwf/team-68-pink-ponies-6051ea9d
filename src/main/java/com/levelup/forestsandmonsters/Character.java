@@ -5,7 +5,7 @@ package com.levelup.forestsandmonsters;
 import com.levelup.forestsandmonsters.GameController.DIRECTION;
 
 public class Character {
-    public static final String DEFAULT_NAME = "Erin";
+    public static final String DEFAULT_NAME = "PinkPonies";
     String name;
     GameMap map = null;
     Position currentPosition = null;
