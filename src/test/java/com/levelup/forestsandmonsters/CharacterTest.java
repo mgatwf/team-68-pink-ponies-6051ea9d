@@ -25,9 +25,13 @@ public class CharacterTest {
    @Test
     public void testCharacterNameWithSpecialChars(){
         Exception exception = assertThrows(InstantiationException.class, () -> {
-                  Character testObj = new Character("Varsha$#");
+                new Character("Varsha$#");
 
     });
+
+    String expectedMessage = "Character Cannot be Created with an Invalid Name";
+    assertEquals(expectedMessage, exception.getMessage());
+
     }
 
 }
