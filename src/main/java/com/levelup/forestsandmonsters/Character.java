@@ -14,11 +14,12 @@ public class Character {
     public Character(){
       name = DEFAULT_NAME;
     }
-    public Character(String name){
+    public Character(String name) throws InstantiationException{
         if(name.trim().equals(""))
           this.name = DEFAULT_NAME;
-        else
+        else if(name.matches("^[A-Za-z]*$"))
           this.name = name;
+        else  throw new InstantiationException("Character Cannot be Created with an Invalid Name"); 
     }
 
     public String getName(){

@@ -31,7 +31,7 @@ public class GameController {
 
     // Pre-implemented to demonstrate ATDD
     // TODO: Update this if it does not match your design
-    public void createCharacter(String name) {
+    public void createCharacter(String name) throws InstantiationException {
         this.character = new Character(name);
         this.status.characterName = character.getName();
     }
