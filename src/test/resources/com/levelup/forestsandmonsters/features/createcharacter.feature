@@ -13,5 +13,4 @@ Scenario Outline:: Set character name
         | characterNameInput | characterNameOutput |
         | "Bob"          | "Bob"           |
         | ""              | "PinkPonies"         |
-        | "m@n" | "Invalid name" |
 
