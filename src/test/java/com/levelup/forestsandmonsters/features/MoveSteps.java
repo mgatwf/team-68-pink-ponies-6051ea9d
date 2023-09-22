@@ -39,6 +39,7 @@ public class MoveSteps {
 
     @When("the character moves")
     public void theCharacterMoves() {
+        testObj.startGame();
         testObj.setCharacterPosition(new Point(this.startX, this.startY));
         testObj.move(this.direction);
         GameController.GameStatus status = testObj.getStatus();

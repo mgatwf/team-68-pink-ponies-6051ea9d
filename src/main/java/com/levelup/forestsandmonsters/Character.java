@@ -26,13 +26,13 @@ public class Character {
     }
     public void enterMap(GameMap map){
         this.map = map;
-        //this.currentPosition = map.startingPosition;
+        this.currentPosition = map.startingPosition;
     }
     public Position getPosition(){
      return currentPosition;
     }
     public void move(DIRECTION direction){
-       // this.currentPosition = map.calculatePosition(this.currentPosition, direction);
+       this.currentPosition = map.calculatePosition(this.currentPosition, direction);
         moveCount++;
     }
     public int getMoveCount(){
